@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="zh-CN" style="font-size: 100px">
+<head>
+	<meta charset="utf-8">
+	<meta name ="viewport" content ="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5" />
+	<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./honey-base.js"></script>
+	<title>Test</title>
+</head>
+<body>	
+	TEST
+	<script type="text/javascript">
+		// HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
+		// 	alert(resp);
+		// });
+		HNetwork.Post('http://live.tikiapp.im/top/web_wechat/wechat_signs/',{},function(resp){
+			alert(resp);
+		});
+		HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
+			alert(resp);
+		});
+
+	</script>
+</body>
+</html>
