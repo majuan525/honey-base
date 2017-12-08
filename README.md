@@ -17,19 +17,21 @@
 
 
 #1.HNetwork
-在调用服务端之前，需要配置开发者自己的 AppID等信息,AppID申请地址:https://top.facechat.im:
 ```javascript
 <script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./ajaxupload.3.5.js"></script>
 <script type="text/javascript" src="./honey-base.js"></script>
+//以Post方式提交数据
 HNetwork.Post('url',{},function(resp){
   	console.log(resp);
 });
+//从远程获取一段Json数据
 HNetwork.GetJson('url',function(resp){
-		console.log(resp);
+	console.log(resp);
 });
+//为一个元素ID绑定一个上传文件事件
 HNetwork.BindUploadEvent("element-id","url",{},"data",[],function(file,resp){
-		console.log(resp)
+	console.log(resp)
 });
 ```
 
