@@ -77,11 +77,32 @@ var HNetwork = {
 				 callback(msg);
 			 }
 		});
-	}
+	},
+	AddUploadEvent:function(id,url,params,filename,suffixes,callback){
+		new AjaxUpload(
+			$("#" + id),
+			{  
+				action: url,
+	        	data: params,  
+	        	name: 'data',
+	        	timeout:180000,
+		        onSubmit: function(file,ext) {
+		           // if(!(ext && /^(apk)$/.test(ext))) {  
+		           //     alert("您上传的文件格式有误，请重新选择！");  
+		           //     return false;  
+		           // }  
+		        },
+		        onComplete:function(file,resp) {  
+		           callback(file,resp);
+		        }
+			});
+		}
 };
+
 var HStrings = {
 
 };
+
 var HRegex = {
 
 };
