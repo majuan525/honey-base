@@ -15,13 +15,14 @@
 	<br/>
 	<a id="hello" >文件上传->Click Me</a>
 	<script type="text/javascript">
-		HNetwork.Post('http://live.tikiapp.im/top/web_wechat/wechat_signs/',{},function(resp){
+		HNetwork.Post('http://live.tikiapp.im/top/web_wechat/wechat_signs/',{"hello":"world","key2":"value"},function(resp){
 			console.log(resp);
 		});
+
 		HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
 			console.log(resp);
 		});
-		HNetwork.BindUploadEvent("hello","/admin/i_tool_action/upload_channel_apk",{},"data",[],function(file,resp){
+		HNetwork.BindUploadEvent("hello","url",{},"data",[],function(file,resp){
 			console.log(resp)
 		});
 	</script>
