@@ -1,5 +1,5 @@
 /**
- * author:xxxx@gmail.com
+ * author:391914091@qq.com
 **/
 var HNetwork = {
 	PostWithRich:function(url,data,dataType,timeout,callback){
