@@ -78,7 +78,7 @@ var HNetwork = {
 			 }
 		});
 	},
-	AddUploadEvent:function(id,url,params,filename,suffixes,callback){
+	BindUploadEvent:function(id,url,params,filename,suffixes,callback){
 		new AjaxUpload(
 			$("#" + id),
 			{  
