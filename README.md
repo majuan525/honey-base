@@ -35,4 +35,31 @@ HNetwork.BindUploadEvent("element-id","url",{},"data",[],function(file,resp){
 });
 ```
 
+### 2.HString
 
+```javascript
+```
+
+### 3.HURL
+
+```javascript
+```
+
+### 4.HVue
+
+```javascript
+```
+
+### 5.HTemplate
+
+```javascript
+```
+
+### 6.HBootstrap
+
+```javascript
+```
+### 7.HWidget
+
+```javascript
+```
