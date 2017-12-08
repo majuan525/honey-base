@@ -99,10 +99,11 @@ var HNetwork = {
 		}
 };
 
-var HStrings = {
+var HString = {
 	isContains:function(str,substr){
 		return str.indexOf(substr) >= 0;
 	}
+	// HRegex
 };
 
 var HURL = {
@@ -124,10 +125,6 @@ var HURL = {
 	    }
 	    return paramValue;	
 	}
-};
-
-var HRegex = {
-
 };
 
 var HTemplate = {
