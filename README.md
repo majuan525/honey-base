@@ -7,6 +7,11 @@
 <tr><td><em>组件</em></td><td><em>说明</em></td></tr>
 <tr><td>HNetwork</td><td>封装了基础的Get,Post,Upload的封装，该项目需要依赖于Jquery/Ajaxupload(上传)</td></tr>
 <tr><td>HString</td><td>对字符串的Join/Split/Regex/Find等操作</td></tr>
+<tr><td>HURL</td><td>对Window.location的封装处理</td></tr>
+<tr><td>HVue</td><td>依赖Vue.js,用于数据绑定</td></tr>
+<tr><td>HTemplate</td><td>依赖template-simple.js,用于前端异步请求数据的模版渲染</td></tr>
+<tr><td>HBootstrap</td><td>封装了对Bootstrap的调用操作</td></tr>
+<tr><td>HWidget</td><td>自实现的小部件调用，需要依赖hbase-css使用</td></tr>
 </tbody>
 </table>
 
