@@ -38,11 +38,15 @@ HNetwork.BindUploadEvent("element-id","url",{},"data",[],function(file,resp){
 ### 2.HString
 
 ```javascript
+//判断一个字符串是否包含另一个字符串
+var inclucde = HString.isContains("hello","hel")
 ```
 
 ### 3.HURL
 
 ```javascript
+//从当前地址栏获取包含的某个参数
+var value = HURL.GetURLParam('param');
 ```
 
 ### 4.HVue
