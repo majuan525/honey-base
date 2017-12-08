@@ -106,3 +106,7 @@ var HStrings = {
 var HRegex = {
 
 };
+
+var HTemplate = {
+
+};
