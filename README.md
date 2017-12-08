@@ -6,6 +6,7 @@
 <tbody>
 <tr><td><em>组件</em></td><td><em>说明</em></td></tr>
 <tr><td>HNetwork</td><td>封装了基础的Get,Post,Upload的封装，该项目需要依赖于Jquery/Ajaxupload(上传)</td></tr>
+<tr><td>HString</td><td>对字符串的Join/Split/Regex/Find等操作</td></tr>
 </tbody>
 </table>
 
