@@ -128,7 +128,9 @@ var HURL = {
 };
 
 var HTemplate = {
-
+	render:function(templateId,data){
+		return template(templateId,data);
+	}
 };
 
 var HVue = {

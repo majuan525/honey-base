@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name ="viewport" content ="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5" />
-	<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="./ajaxupload.3.5.js"></script>
-	<script type="text/javascript" src="./honey-base.js"></script>
+	<script type="text/javascript" src="ext/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="ext/ajaxupload.3.5.js"></script>
+	<script type="text/javascript" src="honey.js"></script>
 	<title>Test</title>
 </head>
 <body>	
@@ -22,6 +22,7 @@
 		HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
 			console.log(resp);
 		});
+
 		HNetwork.BindUploadEvent("hello","url",{},"data",[],function(file,resp){
 			console.log(resp)
 		});
