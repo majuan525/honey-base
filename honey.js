@@ -84,7 +84,7 @@ var HNetwork = {
 			{  
 				action: url,
 	        	data: params,  
-	        	name: 'data',
+	        	name: filename,
 	        	timeout:180000,
 		        onSubmit: function(file,ext) {
 		           // if(!(ext && /^(apk)$/.test(ext))) {  
@@ -139,6 +139,21 @@ var HVue = {
 
 var HBootstrap = {
 
+};
+
+var HTool = {
+	NextPageWithScroll:function(minHeight,callback){
+		$(window).scroll(function () {
+	        //$(window).scrollTop()这个方法是当前滚动条滚动的距离
+	        //$(window).height()获取当前窗体的高度
+	        //$(document).height()获取当前文档的高度
+	        if((minHeight + $(window).scrollTop()) >= ($(document).height() - $(window).height())) {
+	            //当底部基本距离+滚动的高度〉=文档的高度-窗体的高度时；
+	            //我们需要去异步加载数据了
+	            callback();
+	        }
+	    });
+	}
 };
 
 
