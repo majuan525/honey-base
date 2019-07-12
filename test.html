@@ -15,17 +15,69 @@
 	<br/>
 	<a id="hello" >文件上传->Click Me</a>
 	<script type="text/javascript">
-		HNetwork.Post('http://live.tikiapp.im/top/web_wechat/wechat_signs/',{"hello":"world","key2":"value"},function(resp){
-			console.log(resp);
-		});
+		// function getSize(elementID) {
+		//     var file = document.getElementById(elementID);
+		//     var size = 0;
+		//     if (file.value) {
+		//         if (file.files) {
+		//             size = file.files[0].size;
+		//         }
+		//         else {
+		//             var imgid = "img" + elementID;
+		//             var obj_img = document.getElementById(imgid);
+		//             obj_img.dynsrc = file.value;
+		//             size = obj_img.fileSize;
+		//         }
+		//     }
+		//     return size;
+		// }
 
-		HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
-			console.log(resp);
-		});
+		// HNetwork.Post('http://live.tikiapp.im/top/web_wechat/wechat_signs/',{"hello":"world","key2":"value"},function(resp){
+		// 	console.log(resp);
+		// });
 
-		HNetwork.BindUploadEvent("hello","http://120.40.133.139:9003/report/img",{},"file",["jpg","png"],function(file,resp){
-			console.log(resp)
-		});
+		// HNetwork.GetJson('http://live.tikiapp.im/top/web_wechat/wechat_signs/',function(resp){
+		// 	console.log(resp);
+		// });
+
+		// HNetwork.BindUploadEvent("hello","http://120.40.133.139:9003/report/img",{},"file",["jpg","png"],function(file,resp){
+		// 	console.log(resp)
+
+		// });
+
+		 $.ajax("http://127.0.0.1:8080/t4",JSON.stringify({hello:"yes"}),function(result){
+                console.log(result); 
+                },
+                "application/json");
+
+		function ajaxPostAsJson(url, data, callback, errorBack) {
+        	data = JSON.stringify(data)
+	        $.ajax({
+	            url:url,
+	            type:"post",
+	            data: data,
+	            processData: false,
+	            contentType: "application/json",
+	            async: true,
+	            cache: false,
+	            success: (response) => {
+	                console.log(response);
+	            },
+	            error: (data) => {
+	                
+	            },
+	            complete: this.complete
+	        });
+	    }
+	    function sc(resp){
+
+	    }
+	    function ec(resp){
+
+	    }
+	    ajaxPostAsJson("http://127.0.0.1:8080/t4",{"hello":"yes"},sc,ec);
+
+
 	</script>
 </body>
 </html>
